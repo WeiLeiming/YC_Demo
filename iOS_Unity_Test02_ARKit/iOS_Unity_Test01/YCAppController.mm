@@ -62,7 +62,7 @@
     _rootView               = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _rootController.view    = _rootView;
 
-    UIViewController *mainVC       = [storyBoard instantiateViewControllerWithIdentifier:@"idMainViewController"];
+    UIViewController *mainVC       = [storyBoard instantiateInitialViewController];//[storyBoard instantiateViewControllerWithIdentifier:@"idMainViewController"];
     mainVC.navigationItem.title = @"Home";
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
 
